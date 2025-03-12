@@ -1,0 +1,128 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+    line-height: 1.6;
+}
+
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header.dark-mode {
+    background-color: #111;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 2.5rem;
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+}
+
+.dark-mode h2 {
+    border-bottom-color: #fff;
+}
+
+.project {
+    background-color: #fff;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.dark-mode .project {
+    background-color: #2a2a2a;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+#theme-toggle {
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.dark-mode #theme-toggle {
+    background-color: #333;
+    color: #fff;
+    border-color: #fff;
+}
+
+#project-filter {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul ul {
+    padding-left: 1.5rem;
+    list-style-type: disc;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer.dark-mode {
+    background-color: #111;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    main {
+        padding: 1rem;
+    }
+    nav a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+    #theme-toggle {
+        margin-top: 0.5rem;
+    }
+}
