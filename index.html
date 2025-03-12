@@ -5,101 +5,219 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aman Sharma - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Aman Sharma </h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        <button id="theme-toggle">Toggle Dark Mode</button>
+    <div id="particles-js" class="particles"></div>
+    <div id="background-grid"></div>
+    <header class="sticky">
+        <div class="header-content">
+            <h1>Aman Sharma</h1>
+            <nav>
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#resume">Resume</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#timeline">Journey</a>
+                <a href="#github">GitHub</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+        </div>
     </header>
     <main>
-        <section id="about">
+        <section id="hero">
+            <div id="hero-3d" class="hero-content">
+                <h2 class="glitch" data-text="Aman Sharma">Aman Sharma</h2>
+                <p class="subtitle">B.Tech AI | Developer | Innovator</p>
+                <div class="hero-buttons">
+                    <a href="/Aman_Sharma_Resume.pdf" class="btn neon-btn" download>Download Resume</a>
+                    <a href="#contact" class="btn neon-btn">Connect</a>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="section animate">
             <h2>About Me</h2>
-            <p>Hello! I'm a final-year B.Tech student at KIET Group of Institutions, passionate about computer science and technology. I love solving problems, building efficient solutions, and continuously learning new concepts in programming, data structures, and AI.
-
-                With a strong foundation in C++, Python, and Deep Learning, I am eager to explore opportunities where I can apply my skills to real-world challenges. My interests span across software development, machine learning, and competitive programming.
-                
-                Beyond coding, I am a firm believer in teamwork, effective communication, and innovation. I'm always excited to collaborate on meaningful projects that push the boundaries of technology.
-                
-                Let's connect and build something amazing together! 🚀</p>
+            <div class="about-content">
+                <p>Final-year B.Tech student at KIET Group of Institutions, specializing in Computer Science with AI (62.4%). I’m passionate about coding, machine learning, and building impactful solutions.</p>
+                <p>Contact: +918433174433 | <a href="mailto:amanvats2050@gmail.com">amanvats2050@gmail.com</a></p>
+                <p>Links: <a href="https://www.linkedin.com/in/aman-sharma-07632b231/" target="_blank">LinkedIn</a> | <a href="https://github.com/amansharma253" target="_blank">GitHub</a></p>
+            </div>
         </section>
-        <section id="projects">
+        <section id="resume" class="section animate">
+            <h2>Resume</h2>
+            <div class="resume-content">
+                <div class="resume-download">
+                    <a href="/Aman_Sharma_Resume.pdf" class="btn neon-btn" download>Download PDF</a>
+                </div>
+                <div class="resume-section">
+                    <h3>Aman Sharma</h3>
+                    <p>+918433174433 | amanvats2050@gmail.com | <a href="https://www.linkedin.com/in/aman-sharma-07632b231/">LinkedIn</a> | <a href="https://github.com/amansharma253">GitHub</a></p>
+                </div>
+                <div class="resume-section">
+                    <h3>Education</h3>
+                    <p><strong>KIET Group of Institutions</strong> - B.Tech (Computer Science with AI), 62.4%<br>June 2021 - June 2025, Ghaziabad, Uttar Pradesh</p>
+                    <p><strong>T.R.M Public School</strong> - Intermediate, 92.4%<br>April 2019 - April 2020, Modinagar, Uttar Pradesh</p>
+                    <p><strong>T.R.M Public School</strong> - High School, 82.84%<br>April 2017 - April 2018, Modinagar, Uttar Pradesh</p>
+                </div>
+                <div class="resume-section">
+                    <h3>Internships</h3>
+                    <p><strong>Cisco Virtual Internship Program</strong> - Cisco Networking Academy, Virtual<br>May - July 2024</p>
+                    <ul>
+                        <li>Gained hands-on experience in networking fundamentals (routing, switching, security).</li>
+                        <li>Configured and troubleshot networks using Cisco Packet Tracer.</li>
+                        <li>Tools: Cisco Packet Tracer</li>
+                    </ul>
+                    <p><strong>Python and Machine Learning Intern</strong> - YBI Foundation, Delhi, India<br>August 2022</p>
+                    <ul>
+                        <li>Explored Python with Pandas and ML libraries.</li>
+                        <li>Implemented projects on rainforest topics using Google Colab.</li>
+                        <li>Tech: Python, NumPy, Pandas, Sklearn</li>
+                    </ul>
+                </div>
+                <div class="resume-section">
+                    <h3>Projects</h3>
+                    <p><strong>AI-Powered Text Summarizer</strong></p>
+                    <ul>
+                        <li>Built a summarization system using Pegasus and T5 models.</li>
+                        <li>Evaluated with ROUGE metrics; optimized for accuracy.</li>
+                        <li>Tech: Python, Hugging Face Transformers, samsumdata</li>
+                    </ul>
+                    <p><strong>Circle Social</strong></p>
+                    <ul>
+                        <li>Social media app on Polygon Blockchain; developed frontend with HTML/CSS.</li>
+                        <li>Assisted with documentation.</li>
+                    </ul>
+                    <p><strong>Restaurant Website</strong></p>
+                    <ul>
+                        <li>Interactive site with a Dialogflow chatbot for table booking.</li>
+                        <li>Tech: HTML, CSS, JS, Dialogflow</li>
+                    </ul>
+                </div>
+                <div class="resume-section">
+                    <h3>Technical Skills</h3>
+                    <p><strong>Languages:</strong> C, C++, Java, Python, JavaScript</p>
+                    <p><strong>Web Dev:</strong> HTML, CSS, JavaScript</p>
+                    <p><strong>Tools:</strong> VS Code, NumPy, Pandas, Git, GitHub</p>
+                    <p><strong>Concepts:</strong> OOP, OS, DBMS, Computer Networks</p>
+                </div>
+                <div class="resume-section">
+                    <h3>Coding Platforms</h3>
+                    <p>5th on HackerRank SQL | 100+ Questions on LeetCode | 100+ Questions on GeeksforGeeks</p>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="section animate">
             <h2>Projects</h2>
-            <input type="text" id="project-filter" placeholder="Filter projects...">
-            <div class="project" data-category="web">
-                <h3>Project 1</h3>
-                <p>AI-Based Text Summarizer using T5
-                    A deep learning-powered text summarization tool utilizing T5 (Text-to-Text Transfer Transformer). This project processes lengthy articles and generates concise, meaningful summaries. It leverages Hugging Face Transformers, the CNN/DailyMail dataset, and PyTorch/TensorFlow for model fine-tuning. The frontend features an intuitive UI with separate input/output textboxes, animations, and authentication functionality.
-                    
-                    Technologies Used: Python, Hugging Face, T5 Model, PyTorch/TensorFlow, Flask, JavaScript, CSS</p>
-                <a href="link-to-project">View Project</a>
+            <input type="text" id="project-filter" placeholder="Search Projects...">
+            <div class="projects-grid">
+                <div class="project-card" data-category="ai">
+                    <div class="card-content">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504e'sb3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="AI Text Summarizer">
+                        <div class="card-overlay">
+                            <h3>AI-Powered Text Summarizer</h3>
+                            <p>Text summarization with Pegasus/T5, evaluated with ROUGE metrics.</p>
+                            <p><strong>Tech:</strong> Python, Transformers, PyTorch</p>
+                            <a href="https://github.com/amansharma253/AI-Text-Summarizer" class="btn" target="_blank">Explore</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="web">
+                    <div class="card-content">
+                        <img src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Circle Social">
+                        <div class="card-overlay">
+                            <h3>Circle Social</h3>
+                            <p>Blockchain-based social app. Built frontend with HTML/CSS.</p>
+                            <p><strong>Tech:</strong> HTML, CSS, Polygon</p>
+                            <a href="https://github.com/amansharma253" class="btn" target="_blank">Explore</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="web">
+                    <div class="card-content">
+                        <img src="https://images.unsplash.com/photo-1552566626-52f8b8289699?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Restaurant Website">
+                        <div class="card-overlay">
+                            <h3>Restaurant Website</h3>
+                            <p>Interactive site with a Dialogflow chatbot for table booking.</p>
+                            <p><strong>Tech:</strong> HTML, CSS, JS, Dialogflow</p>
+                            <a href="https://github.com/amansharma253" class="btn" target="_blank">Explore</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="project" data-category="javascript">
-                <h3>Project 2</h3>
-                <p>A responsive and interactive personal portfolio showcasing my projects, skills, and achievements. Designed with a modern UI, smooth animations, and seamless navigation, this website highlights my expertise in front-end development while maintaining performance and accessibility.
-
-                    Technologies Used: HTML, CSS, JavaScript, React.js, Tailwind CSS</p>
-                <a href="link-to-project">View Project</a>
-            </div>
-            <!-- Add more projects as you create them -->
         </section>
-        <section id="skills">
+        <section id="skills" class="section animate">
             <h2>Skills</h2>
-            <ul>
-                <li><strong>Programming Languages:</strong>
-                  <ul>
-                    <li>C++</li>
-                    <li>Python</li>
-                    <li>C</li>
-                  </ul>
-                </li>
-                <li><strong>Development &amp; Tools:</strong>
-                  <ul>
-                    <li>HTML, CSS, JavaScript</li>
-                    <li>React.js, Tailwind CSS</li>
-                    <li>Git &amp; GitHub</li>
-                    <li>Docker</li>
-                    <li>Linux</li>
-                  </ul>
-                </li>
-                <li><strong>AI/ML &amp; Deep Learning:</strong>
-                  <ul>
-                    <li>OpenCV</li>
-                    <li>PyTorch / TensorFlow</li>
-                    <li>CNNs (Convolutional Neural Networks)</li>
-                    <li>Vision Transformers</li>
-                  </ul>
-                </li>
-                <li><strong>Computer Science Fundamentals:</strong>
-                  <ul>
-                    <li>Data Structures &amp; Algorithms (DSA)</li>
-                    <li>Image Processing</li>
-                    <li>Aptitude &amp; Mathematics</li>
-                  </ul>
-                </li>
-                <li><strong>Soft Skills:</strong>
-                  <ul>
-                    <li>Communication</li>
-                    <li>Teamwork</li>
-                    <li>Problem Solving</li>
-                  </ul>
-                </li>
-              </ul>
-              
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skill-bar"><span>C++</span><div class="progress" data-progress="90"></div></div>
+                    <div class="skill-bar"><span>Python</span><div class="progress" data-progress="85"></div></div>
+                    <div class="skill-bar"><span>Java</span><div class="progress" data-progress="75"></div></div>
+                    <div class="skill-bar"><span>JS</span><div class="progress" data-progress="80"></div></div>
+                </div>
+                <div class="skill-category">
+                    <h3>Web Dev</h3>
+                    <div class="skill-bar"><span>HTML/CSS</span><div class="progress" data-progress="90"></div></div>
+                    <div class="skill-bar"><span>JavaScript</span><div class="progress" data-progress="80"></div></div>
+                    <div class="skill-bar"><span>Git</span><div class="progress" data-progress="85"></div></div>
+                </div>
+                <div class="skill-category">
+                    <h3>AI/ML</h3>
+                    <div class="skill-bar"><span>NumPy/Pandas</span><div class="progress" data-progress="85"></div></div>
+                    <div class="skill-bar"><span>PyTorch</span><div class="progress" data-progress="80"></div></div>
+                    <div class="skill-bar"><span>Sklearn</span><div class="progress" data-progress="75"></div></div>
+                </div>
+            </div>
+            <div class="coding-stats">
+                <h3>Coding Stats</h3>
+                <p>5th on HackerRank SQL | 100+ LeetCode | 100+ GeeksforGeeks</p>
+            </div>
         </section>
-        <section id="contact">
+        <section id="timeline" class="section animate">
+            <h2>My Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-year="2017-2018"><h3>High School</h3><p>T.R.M Public School - 82.84%</p></div>
+                <div class="timeline-item" data-year="2019-2020"><h3>Intermediate</h3><p>T.R.M Public School - 92.4%</p></div>
+                <div class="timeline-item" data-year="2021-2025"><h3>B.Tech AI</h3><p>KIET - 62.4%</p></div>
+                <div class="timeline-item" data-year="2022"><h3>ML Intern</h3><p>YBI Foundation - Python & Pandas</p></div>
+                <div class="timeline-item" data-year="2024"><h3>Cisco Intern</h3><p>Networking with Packet Tracer</p></div>
+            </div>
+        </section>
+        <section id="github" class="section animate">
+            <h2>GitHub Insights</h2>
+            <div id="github-stats">
+                <p>Public Repos: 10 (as of March 2025)</p>
+                <p>Explore my work: <a href="https://github.com/amansharma253" target="_blank">github.com/amansharma253</a></p>
+            </div>
+        </section>
+        <section id="contact" class="section animate">
             <h2>Contact</h2>
-            <p>Email: amanvats2050@gmail.com</p>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn neon-btn">Send</button>
+            </form>
+            <p id="form-response"></p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/aman-sharma-07632b231/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/amansharma253" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:amanvats2050@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
         </section>
     </main>
     <footer>
-        <p>© 2023 Your Name</p>
+        <p>© 2025 Aman Sharma</p>
     </footer>
+    <button id="back-to-top"><i class="fas fa-rocket"></i></button>
     <script src="script.js"></script>
 </body>
 </html>
