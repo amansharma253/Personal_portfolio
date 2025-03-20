@@ -170,9 +170,41 @@ particlesJS('particles-js', {
     retina_detect: true
 });
 
+// Google Analytics
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-XXXXXXXXX-X', 'auto');
+ga('send', 'pageview');
+
 // Window Resize Handler
 window.addEventListener('resize', () => {
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
     renderer.setSize(window.innerWidth, window.innerHeight);
+});
+
+// Lazy Load Images
+document.querySelectorAll('img').forEach(img => {
+    img.loading = 'lazy';
+});
+
+// Testimonials Carousel Auto-Scroll
+const testimonialsCarousel = document.querySelector('.testimonials-carousel');
+let isScrolling = false;
+
+function autoScrollCarousel() {
+    if (!isScrolling) {
+        testimonialsCarousel.scrollBy({ left: 300, behavior: 'smooth' });
+    }
+}
+
+setInterval(autoScrollCarousel, 3000);
+
+testimonialsCarousel.addEventListener('scroll', () => {
+    isScrolling = true;
+    clearTimeout(isScrolling);
+    setTimeout(() => (isScrolling = false), 1000);
 });
