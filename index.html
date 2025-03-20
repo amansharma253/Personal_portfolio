@@ -38,12 +38,13 @@
     </header>
     <main>
         <section id="hero">
+            <div id="hero-3d" class="hero-3d"></div>
             <div class="hero-content">
-                <img src="./assets/profile_pic.png" alt="Aman Sharma" class="hero-photo">
-                <h1>Aman Sharma</h1>
+                <img src="assets/profile_pic.png" alt="Profile photo of Aman Sharma" class="hero-photo">
+                <h1 class="glitch" data-text="Aman Sharma">Aman Sharma</h1>
                 <p class="subtitle">Transforming ideas into impactful solutions with AI and web development.</p>
                 <div class="hero-buttons">
-                    <a href="./assets/AMANSHARMA_RESUME (6) (2).pdf" class="btn primary-btn" download>Hire Me</a>
+                    <a href="assets/Aman_resume.pdf" class="btn primary-btn" download="Aman_Sharma_Resume.pdf">Hire Me</a>
                     <a href="#contact" class="btn secondary-btn">Let's Collaborate</a>
                 </div>
             </div>
@@ -64,7 +65,7 @@
             <h2>Resume</h2>
             <div class="resume-content">
                 <div class="resume-download">
-                    <a href="/Aman_Sharma_Resume.pdf" class="btn neon-btn" download>Download PDF</a>
+                    <a href="assets/Aman_resume.pdf" class="btn neon-btn" download="Aman_Sharma_Resume.pdf">Download PDF</a>
                 </div>
                 <div class="resume-section">
                     <h3>Aman Sharma</h3>
@@ -121,58 +122,65 @@
                     <h3>Coding Platforms</h3>
                     <p>5th on HackerRank SQL | 100+ Questions on LeetCode | 100+ Questions on GeeksforGeeks</p>
                 </div>
-                <div class="resume-section">
-                    <p><strong>Professional Summary:</strong> A highly motivated and detail-oriented AI and software development enthusiast with hands-on experience in machine learning, web development, and networking. Adept at collaborating in team environments and delivering results-driven solutions.</p>
-                </div>
             </div>
         </section>
         <section id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="projects-grid">
-        <div class="project-card">
-            <img src="./assets/project1.png" alt="AI Text Summarizer">
-            <div class="project-info">
-                <h3>AI Text Summarizer</h3>
-                <p>Developed a text summarization system using Pegasus and T5 models. Improved summarization accuracy by optimizing model parameters and evaluating with ROUGE metrics.</p>
-                <div class="project-links">
-                    <a href="https://github.com/amansharma253/AI-Text-Summarizer" class="btn" target="_blank">View Code</a>
-                    <a href="https://live-demo-link.com" class="btn" target="_blank">View Demo</a>
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-category="Web Development">
+                    <img src="assets/gamifiedtasktracker.png" alt="Screenshot of Gamified Task Tracker project">
+                    <div class="project-info">
+                        <h3>Gamified Task Tracker</h3>
+                        <p>A web application to manage tasks with a gamified interface, built using React and deployed on Vercel.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/amansharma253/gamified-task-tracker" class="btn" target="_blank">View Code</a>
+                            <a href="https://gamified-task-tracker-sigma.vercel.app/" class="btn" target="_blank">View Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="Web Development">
+                    <img src="assets/portfolio.png" alt="Screenshot of Personal Portfolio project">
+                    <div class="project-info">
+                        <h3>Personal Portfolio</h3>
+                        <p>A responsive portfolio website showcasing my skills and projects, built with React and Vite.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/amansharma253/Personal_portfolio" class="btn" target="_blank">View Code</a>
+                            <a href="https://personal-portfolio-umber-eta-39.vercel.app/" class="btn" target="_blank">View Demo</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- Add more project cards -->
-    </div>
-</section>
+        </section>
         <section id="skills" class="section">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-        <div class="skill-category">
-            <h3>Programming Languages</h3>
-            <ul>
-                <li>C++ (Advanced)</li>
-                <li>Python (Intermediate)</li>
-                <li>Java (Intermediate)</li>
-                <li>JavaScript (Intermediate)</li>
-            </ul>
-        </div>
-        <div class="skill-category">
-            <h3>Frameworks & Libraries</h3>
-            <ul>
-                <li>React.js (Intermediate)</li>
-                <li>Hugging Face Transformers (Intermediate)</li>
-                <li>NumPy & Pandas (Advanced)</li>
-            </ul>
-        </div>
-        <div class="skill-category">
-            <h3>Tools & Platforms</h3>
-            <ul>
-                <li>Git & GitHub (Advanced)</li>
-                <li>VS Code (Advanced)</li>
-                <li>Dialogflow (Intermediate)</li>
-            </ul>
-        </div>
-    </div>
-</section>
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <ul>
+                        <li>C++ (Advanced)</li>
+                        <li>Python (Intermediate)</li>
+                        <li>Java (Intermediate)</li>
+                        <li>JavaScript (Intermediate)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Frameworks & Libraries</h3>
+                    <ul>
+                        <li>React.js (Intermediate)</li>
+                        <li>Hugging Face Transformers (Intermediate)</li>
+                        <li>NumPy & Pandas (Advanced)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Platforms</h3>
+                    <ul>
+                        <li>Git & GitHub (Advanced)</li>
+                        <li>VS Code (Advanced)</li>
+                        <li>Dialogflow (Intermediate)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
         <section id="timeline" class="section animate">
             <h2>My Journey</h2>
             <div class="timeline">
@@ -191,47 +199,32 @@
             </div>
         </section>
         <section id="testimonials" class="section">
-    <h2>Testimonials</h2>
-    <p>Here's what people have to say:</p>
-    <div class="testimonials-carousel">
-        <div class="testimonial-card">
-            <img src="https://picsum.photos/100" alt="Person Photo">
-            <p>"Aman is a highly skilled developer with a keen eye for detail. His work on our project was exceptional."</p>
-            <h4>- John Doe</h4>
-        </div>
-        <div class="testimonial-card">
-            <img src="https://picsum.photos/100" alt="Person Photo">
-            <p>"Aman's ability to solve complex problems and deliver results is truly impressive."</p>
-            <h4>- Jane Smith</h4>
-        </div>
-    </div>
-</section>
-        <section id="blog" class="section animate">
-            <h2>Blog</h2>
-            <div class="blog-grid">
-                <div class="blog-card">
-                    <h3>How I Built My Portfolio</h3>
-                    <p>Learn about the tools and technologies I used to create this portfolio.</p>
-                    <a href="#" class="btn">Read More</a>
+            <h2>Testimonials</h2>
+            <p>Here's what people have to say:</p>
+            <div class="testimonials-carousel">
+                <div class="testimonial-card">
+                    <img src="https://picsum.photos/100" alt="Person Photo">
+                    <p>"Aman is a highly skilled developer with a keen eye for detail. His work on our project was exceptional."</p>
+                    <h4>- John Doe</h4>
                 </div>
-                <div class="blog-card">
-                    <h3>Top 5 JavaScript Libraries</h3>
-                    <p>Explore the most popular JavaScript libraries for web development.</p>
-                    <a href="#" class="btn">Read More</a>
+                <div class="testimonial-card">
+                    <img src="https://picsum.photos/100" alt="Person Photo">
+                    <p>"Aman's ability to solve complex problems and deliver results is truly impressive."</p>
+                    <h4>- Jane Smith</h4>
                 </div>
-                <!-- Add more blog cards as needed -->
             </div>
         </section>
         <section id="contact" class="section">
-    <h2>Contact Me</h2>
-    <p>If you’d like to discuss potential opportunities or collaborations, feel free to reach out using the form below or connect with me on LinkedIn.</p>
-    <form id="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn primary-btn">Send Message</button>
-    </form>
-</section>
+            <h2>Contact Me</h2>
+            <p>If you’d like to discuss potential opportunities or collaborations, feel free to reach out using the form below or connect with me on LinkedIn.</p>
+            <form id="contact-form">
+                <input type="text" id="name" name="name" placeholder="Your Name" required aria-label="Your Name">
+                <input type="email" id="email" name="email" placeholder="Your Email" required aria-label="Your Email">
+                <textarea id="message" name="message" placeholder="Your Message" required aria-label="Your Message"></textarea>
+                <button type="submit" class="btn primary-btn">Send Message</button>
+                <p id="form-response"></p>
+            </form>
+        </section>
     </main>
     <footer>
         <p>© 2025 Aman Sharma</p>
@@ -241,17 +234,15 @@
             <a href="#contact">Contact</a>
         </div>
         <div class="social-icons">
-            <a href="https://www.linkedin.com" target="_blank">
+            <a href="https://www.linkedin.com/in/aman-sharma-07632b231/" target="_blank">
                 <i class="fab fa-linkedin"></i>
             </a>
-            <a href="https://github.com" target="_blank">
+            <a href="https://github.com/amansharma253" target="_blank">
                 <i class="fab fa-github"></i>
             </a>
         </div>
     </footer>
-
     <button id="back-to-top"><i class="fas fa-rocket"></i></button>
     <script src="script.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 </html>
