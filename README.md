@@ -1,30 +1,27 @@
-# Aman Sharma - Professional Portfolio
+# Aman Sharma — Personal Portfolio 🌐
 
-Welcome to my professional portfolio! This project showcases my expertise in AI, web development, and software engineering.
+## Live Demo
+🔗 https://personal-portfolio-umber-eta-39.vercel.app
+
+## Overview
+This is my professional developer portfolio showcasing my skills in web dev, animations, and interactive UI. Built with HTML, CSS, JS, and enhanced with 3D & animation libraries.
+
+![Portfolio Screenshot](./assets/screenshot.png)
+
+## Tech Stack
+- HTML5 | CSS3 | JavaScript
+- GSAP (Animations)
+- Three.js (3D Section)
+- Particles.js | EmailJS
 
 ## Features
-- Interactive hero section with 3D effects
-- Professional resume download option
-- Filterable project showcase with detailed descriptions
-- Categorized skills section
-- Testimonials from colleagues and mentors
-- Contact form with EmailJS integration
-- Dark mode toggle
-- Responsive design
+✅ Responsive design  
+✅ Dark/Light theme  
+✅ Project showcase  
+✅ Contact form with EmailJS integration
 
-## Technologies Used
-- HTML, CSS, JavaScript
-- GSAP for animations
-- Three.js for 3D effects
-- EmailJS for contact form
-- Particles.js for background effects
-
-## How to Run
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/amansharma253/Personal_portfolio.git
-   ```
-2. Open `index.html` in your browser.
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+## How to Run Locally
+```bash
+git clone https://github.com/amansharma253/Personal_portfolio.git
+cd Personal_portfolio
+open index.html
