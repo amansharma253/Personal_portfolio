@@ -1,248 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Aman Sharma's professional portfolio showcasing expertise in AI, web development, and software engineering.">
-    <meta name="keywords" content="Aman Sharma, AI Developer, Software Engineer, Portfolio, Projects, Skills">
-    <meta name="author" content="Aman Sharma">
-    <title>Aman Sharma - Portfolio</title>
-    <link rel="icon" href="https://cdnjs.cloudflare.com/ajax/libs/favicon.ico/1.0.1/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Aman Sharma — Frontend Web Developer</title>
+
+  <meta
+    name="description"
+    content="Frontend-focused web developer building fast, accessible, and production-grade web interfaces."
+  />
+  <meta name="author" content="Aman Sharma" />
+  <meta
+    name="keywords"
+    content="Frontend Developer, Web Developer, HTML, CSS, JavaScript, Portfolio"
+  />
+
+  <link
+    rel="icon"
+    href="https://cdnjs.cloudflare.com/ajax/libs/favicon.ico/1.0.1/favicon.ico"
+  />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-    <div id="particles-js" class="particles"></div>
-    <div id="background-grid"></div>
-    <header class="sticky">
-        <div class="header-content">
-            <h1>Aman Sharma</h1>
-            <nav>
-                <a href="#hero">Home</a>
-                <a href="#about">About</a>
-                <a href="#resume">Resume</a>
-                <a href="#projects">Projects</a>
-                <a href="#skills">Skills</a>
-                <a href="#timeline">Journey</a>
-                <a href="#github">GitHub</a>
-                <a href="#contact">Contact</a>
-            </nav>
-            <button id="theme-toggle"><i class="fas fa-moon"></i></button>
-        </div>
-    </header>
-    <main>
-        <section id="hero">
-            <div id="hero-3d" class="hero-3d"></div>
-            <div class="hero-content">
-                <img src="assets/profile_pic.png" alt="Profile photo of Aman Sharma" class="hero-photo">
-                <h1 class="glitch" data-text="Aman Sharma">Aman Sharma</h1>
-                <p class="subtitle">Transforming ideas into impactful solutions with AI and web development.</p>
-                <div class="hero-buttons">
-                    <a href="assets/Aman_resume.pdf" class="btn primary-btn" download="Aman_Sharma_Resume.pdf">Hire Me</a>
-                    <a href="#contact" class="btn secondary-btn">Let's Collaborate</a>
-                </div>
-            </div>
-        </section>
-        <section id="about" class="section">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <p>I am Aman Sharma, a final-year B.Tech student specializing in Artificial Intelligence at KIET Group of Institutions. With a strong foundation in programming and a passion for solving real-world problems, I aim to create impactful solutions through technology.</p>
-                <ul class="achievements">
-                    <li>Developed an AI-powered text summarizer using state-of-the-art NLP models.</li>
-                    <li>Collaborated on a full-stack web application for a local business, improving their online presence.</li>
-                    <li>Recipient of the "Best Innovator Award" at the 2024 AI Hackathon.</li>
-                </ul>
-                <p>Feel free to connect with me at <a href="mailto:amanvats2050@gmail.com">amanvats2050@gmail.com</a> or explore my work on <a href="https://github.com/amansharma253" target="_blank">GitHub</a>.</p>
-            </div>
-        </section>
-        <section id="resume" class="section animate">
-            <h2>Resume</h2>
-            <div class="resume-content">
-                <div class="resume-download">
-                    <a href="assets/Aman_resume.pdf" class="btn neon-btn" download="Aman_Sharma_Resume.pdf">Download PDF</a>
-                </div>
-                <div class="resume-section">
-                    <h3>Aman Sharma</h3>
-                    <p>+918433174433 | amanvats2050@gmail.com | <a href="https://www.linkedin.com/in/aman-sharma-07632b231/">LinkedIn</a> | <a href="https://github.com/amansharma253">GitHub</a></p>
-                </div>
-                <div class="resume-section">
-                    <h3>Education</h3>
-                    <p><strong>KIET Group of Institutions</strong> - B.Tech (Computer Science with AI), 62.4%<br>June 2021 - June 2025, Ghaziabad, Uttar Pradesh</p>
-                    <p><strong>T.R.M Public School</strong> - Intermediate, 92.4%<br>April 2019 - April 2020, Modinagar, Uttar Pradesh</p>
-                    <p><strong>T.R.M Public School</strong> - High School, 82.84%<br>April 2017 - April 2018, Modinagar, Uttar Pradesh</p>
-                </div>
-                <div class="resume-section">
-                    <h3>Internships</h3>
-                    <p><strong>Cisco Virtual Internship Program</strong> - Cisco Networking Academy, Virtual<br>May - July 2024</p>
-                    <ul>
-                        <li>Gained hands-on experience in networking fundamentals (routing, switching, security).</li>
-                        <li>Configured and troubleshot networks using Cisco Packet Tracer.</li>
-                        <li>Tools: Cisco Packet Tracer</li>
-                    </ul>
-                    <p><strong>Python and Machine Learning Intern</strong> - YBI Foundation, Delhi, India<br>August 2022</p>
-                    <ul>
-                        <li>Explored Python with Pandas and ML libraries.</li>
-                        <li>Implemented projects on rainforest topics using Google Colab.</li>
-                        <li>Tech: Python, NumPy, Pandas, Sklearn</li>
-                    </ul>
-                </div>
-                <div class="resume-section">
-                    <h3>Projects</h3>
-                    <p><strong>AI-Powered Text Summarizer</strong></p>
-                    <ul>
-                        <li>Built a summarization system using Pegasus and T5 models.</li>
-                        <li>Evaluated with ROUGE metrics; optimized for accuracy.</li>
-                        <li>Tech: Python, Hugging Face Transformers, samsumdata</li>
-                    </ul>
-                    <p><strong>Circle Social</strong></p>
-                    <ul>
-                        <li>Social media app on Polygon Blockchain; developed frontend with HTML/CSS.</li>
-                        <li>Assisted with documentation.</li>
-                    </ul>
-                    <p><strong>Restaurant Website</strong></p>
-                    <ul>
-                        <li>Interactive site with a Dialogflow chatbot for table booking.</li>
-                        <li>Tech: HTML, CSS, JS, Dialogflow</li>
-                    </ul>
-                </div>
-                <div class="resume-section">
-                    <h3>Technical Skills</h3>
-                    <p><strong>Languages:</strong> C, C++, Java, Python, JavaScript</p>
-                    <p><strong>Web Dev:</strong> HTML, CSS, JavaScript</p>
-                    <p><strong>Tools:</strong> VS Code, NumPy, Pandas, Git, GitHub</p>
-                    <p><strong>Concepts:</strong> OOP, OS, DBMS, Computer Networks</p>
-                </div>
-                <div class="resume-section">
-                    <h3>Coding Platforms</h3>
-                    <p>5th on HackerRank SQL | 100+ Questions on LeetCode | 100+ Questions on GeeksforGeeks</p>
-                </div>
-            </div>
-        </section>
-        <section id="projects" class="section">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card" data-category="Web Development">
-                    <img src="assets/gamifiedtasktracker.png" alt="Screenshot of Gamified Task Tracker project">
-                    <div class="project-info">
-                        <h3>Gamified Task Tracker</h3>
-                        <p>A web application to manage tasks with a gamified interface, built using React and deployed on Vercel.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/amansharma253/gamified-task-tracker" class="btn" target="_blank">View Code</a>
-                            <a href="https://gamified-task-tracker-sigma.vercel.app/" class="btn" target="_blank">View Demo</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card" data-category="Web Development">
-                    <img src="assets/portfolio.png" alt="Screenshot of Personal Portfolio project">
-                    <div class="project-info">
-                        <h3>Personal Portfolio</h3>
-                        <p>A responsive portfolio website showcasing my skills and projects, built with React and Vite.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/amansharma253/Personal_portfolio" class="btn" target="_blank">View Code</a>
-                            <a href="https://personal-portfolio-umber-eta-39.vercel.app/" class="btn" target="_blank">View Demo</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="skills" class="section">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <ul>
-                        <li>C++ (Advanced)</li>
-                        <li>Python (Intermediate)</li>
-                        <li>Java (Intermediate)</li>
-                        <li>JavaScript (Intermediate)</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Frameworks & Libraries</h3>
-                    <ul>
-                        <li>React.js (Intermediate)</li>
-                        <li>Hugging Face Transformers (Intermediate)</li>
-                        <li>NumPy & Pandas (Advanced)</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Tools & Platforms</h3>
-                    <ul>
-                        <li>Git & GitHub (Advanced)</li>
-                        <li>VS Code (Advanced)</li>
-                        <li>Dialogflow (Intermediate)</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section id="timeline" class="section animate">
-            <h2>My Journey</h2>
-            <div class="timeline">
-                <div class="timeline-item" data-year="2017-2018"><h3>High School</h3><p>T.R.M Public School - 82.84%</p></div>
-                <div class="timeline-item" data-year="2019-2020"><h3>Intermediate</h3><p>T.R.M Public School - 92.4%</p></div>
-                <div class="timeline-item" data-year="2021-2025"><h3>B.Tech AI</h3><p>KIET - 62.4%</p></div>
-                <div class="timeline-item" data-year="2022"><h3>ML Intern</h3><p>YBI Foundation - Python & Pandas</p></div>
-                <div class="timeline-item" data-year="2024"><h3>Cisco Intern</h3><p>Networking with Packet Tracer</p></div>
-            </div>
-        </section>
-        <section id="github" class="section animate">
-            <h2>GitHub Insights</h2>
-            <div id="github-stats">
-                <p>Public Repos: 10 (as of March 2025)</p>
-                <p>Explore my work: <a href="https://github.com/amansharma253" target="_blank">github.com/amansharma253</a></p>
-            </div>
-        </section>
-        <section id="testimonials" class="section">
-            <h2>Testimonials</h2>
-            <p>Here's what people have to say:</p>
-            <div class="testimonials-carousel">
-                <div class="testimonial-card">
-                    <img src="https://picsum.photos/100" alt="Person Photo">
-                    <p>"Aman is a highly skilled developer with a keen eye for detail. His work on our project was exceptional."</p>
-                    <h4>- John Doe</h4>
-                </div>
-                <div class="testimonial-card">
-                    <img src="https://picsum.photos/100" alt="Person Photo">
-                    <p>"Aman's ability to solve complex problems and deliver results is truly impressive."</p>
-                    <h4>- Jane Smith</h4>
-                </div>
-            </div>
-        </section>
-        <section id="contact" class="section">
-            <h2>Contact Me</h2>
-            <p>If you’d like to discuss potential opportunities or collaborations, feel free to reach out using the form below or connect with me on LinkedIn.</p>
-            <form id="contact-form">
-                <input type="text" id="name" name="name" placeholder="Your Name" required aria-label="Your Name">
-                <input type="email" id="email" name="email" placeholder="Your Email" required aria-label="Your Email">
-                <textarea id="message" name="message" placeholder="Your Message" required aria-label="Your Message"></textarea>
-                <button type="submit" class="btn primary-btn">Send Message</button>
-                <p id="form-response"></p>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>© 2025 Aman Sharma</p>
-        <div class="footer-links">
-            <a href="#about">About</a> | 
-            <a href="#projects">Projects</a> | 
-            <a href="#contact">Contact</a>
-        </div>
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/aman-sharma-07632b231/" target="_blank">
-                <i class="fab fa-linkedin"></i>
+
+<body class="no-js">
+  <!-- Skip link -->
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#top" class="logo">Aman.</a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#resume">Resume</a>
+        <a href="#github">GitHub</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button
+        class="theme-toggle"
+        id="theme-toggle"
+        type="button"
+        aria-label="Toggle theme"
+        title="Toggle theme"
+      >
+        <span class="theme-icon" aria-hidden="true">☾</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section id="top" class="hero">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <h1>
+            <span>Frontend</span><br />
+            <span>Web Developer</span>
+          </h1>
+
+          <p>
+            I design and build fast, accessible, and visually refined web
+            interfaces using modern HTML, CSS, and JavaScript.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="assets/Aman_resume.pdf" download>
+              Download Resume
             </a>
-            <a href="https://github.com/amansharma253" target="_blank">
-                <i class="fab fa-github"></i>
-            </a>
+            <a class="btn ghost" href="#contact">Contact</a>
+          </div>
         </div>
-    </footer>
-    <button id="back-to-top"><i class="fas fa-rocket"></i></button>
-    <script src="script.js"></script>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="gradient-orb"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section reveal">
+      <div class="section-inner container">
+        <span class="section-eyebrow">About</span>
+        <h2>Who I Am</h2>
+
+        <p>
+          I’m a frontend-focused developer with a solid computer science
+          foundation and hands-on experience building maintainable interfaces.
+        </p>
+
+        <p>
+          I care about performance, accessibility, and clarity more than visual
+          noise.
+        </p>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section dark reveal">
+      <div class="section-inner container">
+        <span class="section-eyebrow">Work</span>
+        <h2>Selected Projects</h2>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>Personal Portfolio</h3>
+            <p>
+              A production-grade portfolio built with vanilla HTML, CSS, and
+              JavaScript.
+            </p>
+            <a
+              href="https://github.com/amansharma253"
+              target="_blank"
+              rel="noopener"
+            >
+              View Code →
+            </a>
+          </article>
+
+          <article class="project-card">
+            <h3>Gamified Task Tracker</h3>
+            <p>
+              Task management with engagement-driven UI and state-based logic.
+            </p>
+            <a
+              href="https://github.com/amansharma253"
+              target="_blank"
+              rel="noopener"
+            >
+              View Code →
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section reveal">
+      <div class="section-inner container">
+        <span class="section-eyebrow">Expertise</span>
+        <h2>Skills & Tools</h2>
+
+        <div class="skills-grid">
+          <div class="skill-block">
+            <h3>Frontend</h3>
+            <ul>
+              <li>HTML5 (Semantic)</li>
+              <li>CSS3 (Grid, Flexbox)</li>
+              <li>JavaScript (DOM, Events)</li>
+            </ul>
+          </div>
+
+          <div class="skill-block">
+            <h3>Tools</h3>
+            <ul>
+              <li>Git & GitHub</li>
+              <li>Vercel</li>
+              <li>VS Code</li>
+            </ul>
+          </div>
+
+          <div class="skill-block">
+            <h3>CS Foundations</h3>
+            <ul>
+              <li>Operating Systems</li>
+              <li>DBMS</li>
+              <li>Computer Networks</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume" class="section dark reveal">
+      <div class="section-inner container">
+        <span class="section-eyebrow">Resume</span>
+        <h2>Experience Snapshot</h2>
+
+        <ul class="resume-list">
+          <li><strong>B.Tech (AI)</strong> — KIET Group of Institutions</li>
+          <li><strong>ML Intern</strong> — YBI Foundation</li>
+          <li><strong>Networking Intern</strong> — Cisco Networking Academy</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- GITHUB -->
+    <section id="github" class="section reveal">
+      <div class="section-inner container">
+        <span class="section-eyebrow">Code</span>
+        <h2>GitHub</h2>
+
+        <p>
+          Explore more projects, experiments, and learning logs on GitHub.
+        </p>
+
+        <a
+          class="btn ghost"
+          href="https://github.com/amansharma253"
+          target="_blank"
+          rel="noopener"
+        >
+          Visit GitHub →
+        </a>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section dark reveal">
+      <div class="section-inner container">
+        <span class="section-eyebrow">Feedback</span>
+        <h2>Testimonials</h2>
+
+        <blockquote>
+          “Aman brings clarity and discipline to frontend work. Strong attention
+          to detail.”
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section reveal">
+      <div class="section-inner container">
+        <span class="section-eyebrow">Contact</span>
+        <h2>Let’s Talk</h2>
+
+        <form class="contact-form" novalidate>
+          <input name="name" type="text" placeholder="Name" required />
+          <input name="email" type="email" placeholder="Email" required />
+          <textarea name="message" placeholder="Message" required></textarea>
+          <button class="btn primary" type="submit">Send Message</button>
+        </form>
+
+        <p class="muted">
+          This form is a demo. For now, email me directly at
+          <a href="mailto:amanvats2050@gmail.com">amanvats2050@gmail.com</a>.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    © <span id="year"></span> Aman Sharma
+  </footer>
+
+  <!-- Back to top -->
+  <button
+    id="back-to-top"
+    type="button"
+    aria-label="Back to top"
+    hidden
+  >
+    ↑
+  </button>
+
+  <script src="script.js" defer></script>
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
 </body>
 </html>
